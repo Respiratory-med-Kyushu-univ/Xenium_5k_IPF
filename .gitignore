@@ -1,0 +1,19 @@
+# 大きい生データ
+*.fastq
+*.fastq.gz
+*.bam
+*.bai
+*.vcf
+*.vcf.gz
+*.h5ad
+*.h5
+*.tif
+*.ome.tif
+
+# Python 一時ファイル
+__pycache__/
+*.pyc
+*.txt
+
+# Jupyter チェックポイント
+.ipynb_checkpoints/
