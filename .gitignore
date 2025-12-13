@@ -1,4 +1,4 @@
-# 大きい生データ
+# big data
 *.fastq
 *.fastq.gz
 *.bam
@@ -10,10 +10,10 @@
 *.tif
 *.ome.tif
 
-# Python 一時ファイル
+# temp file
 __pycache__/
 *.pyc
 *.txt
 
-# Jupyter チェックポイント
+# Jupyter chekpoints
 .ipynb_checkpoints/
