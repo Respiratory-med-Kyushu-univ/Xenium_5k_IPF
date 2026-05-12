@@ -7,15 +7,6 @@ PUBLIC_PATH = "/mnt/d/data001/public/"  # path to scRNA-seq public data
 
 SAMPLES_SYMBOLS = ["AF_s2", "FR_s1", "FR_s3", "FR_s4", "HC_s1", "HC_s3"]
 
-SAMPLE_BATCH = { 
-    "FR_s3": 0, 
-    "HC_s3": 1, 
-    "FR_s4": 2, 
-    "FR_s1": 3, 
-    "HC_s1": 4,
-    "AF_s2": 5,
-}
-
 MAJOR_CLUSTER_COLORS={
     "Epithelial": "#E41A1C",  
     "Fibroblast": "#377EB8",  
