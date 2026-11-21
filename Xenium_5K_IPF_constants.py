@@ -7,6 +7,16 @@ PUBLIC_PATH = "/mnt/d/data001/public/"  # path to scRNA-seq public data
 
 SAMPLES_SYMBOLS = ["AF_s2", "FR_s1", "FR_s3", "FR_s4", "HC_s1", "HC_s3"]
 
+SAMPLE_COLORS = {
+    "FR_s1": "#1B7837",  # dark green
+    "HC_s1": "#7FBF7B",  # light green
+    "AF_s2": "#B2182B",  # red
+    "FR_s3": "#2166AC",  # dark blue
+    "HC_s3": "#67A9CF",  # light blue
+    "FR_s4": "#E08214",  # orange
+}
+
+
 MAJOR_CLUSTER_COLORS={
     "Epithelial": "#E41A1C",  
     "Fibroblast": "#377EB8",  
@@ -17,7 +27,7 @@ MAJOR_CLUSTER_COLORS={
     "B/Plasma cell": "#E78AC3",  
     "Dendritic cell": "#00FFFF",  
     "Granulocyte": "#66C2A5",  
-    "FRC/FDC": "#A65628",
+    "TLS-associated": "#A65628",
 }
 
 CELL_TYPE_3M = {
@@ -30,7 +40,7 @@ CELL_TYPE_3M = {
     "B/Plasma cell": "Immune",
     "Dendritic cell": "Immune",
     "Granulocyte": "Immune",
-    "FRC/FDC": "Stromal", 
+    "TLS-associated": "Stromal", 
 }
 
 IMP_GENE_NAMES = {
@@ -40,58 +50,58 @@ IMP_GENE_NAMES = {
 }
 
 SUBTYPE_HATCHES = {
-    "AT2": '//',
-    "AT1": '\\\\',
+    "AT2": 'XX',
+    "AT1": '++',
     "KRT5-/KRT17+": "*",
     "Basal": "O",
-    "RAS": ".",
-    "Goblet": "-",
-    "Ciliated": "|",
+    "Secretory": "///",
+    "Goblet": "||",
+    "Ciliated": "--",
         
     "Myofibroblast": "*",
     "COMP+ fibroblast": "O",
-    "GREM1+ fibroblast": "+",
-    "Adventitial fibroblast": "//",
-    "Lipofibroblast": ".",
+    "GREM1+ fibroblast": "++",
+    "Adventitial fibroblast": "XX",
+    "Lipofibroblast": "///",
     
-    "Smooth muscle cell": ".",
-    "Pericyte": "+",
+    "Smooth muscle cell": "///",
+    "Pericyte": "++",
     "Alveolar Pericyte": "O",
 
-    "Lymphatic": ".",
-    "Arteriole": '//',
+    "Lymphatic": "///",
+    "Arteriole": 'O',
     "Aerocyte": '*',
     "General capillary": 'XX',
-    "Venule": '\\\\',
+    "Venule": '++',
     
-    "Monocyte": ".",
-    "Interstitial macrophage": "O",
+    "Monocyte": "||",
+    "Interstitial macrophage": "XX",
     "SPP1+ macrophage": "*",
-    "CXCL9+ macrophage": "//",
-    "Alveolar macrophage": "+",
+    "CXCL9+ macrophage": "///",
+    "Alveolar macrophage": "++",
     
-    "CD4+ T": '//',
-    "CD8+ T": '\\\\',
-    "Treg": ".",
-    "NK": "*",
+    "CD4+ T": 'O',
+    "CD8+ T": '++',
+    "Treg": "*",
+    "NK": "XX",
     
-    "B cell": ".",
-    "Plasma cell": "//",
+    "B cell": "O",
+    "Plasma cell": "++",
     
     "pDC": "XX",
-    "cDC1": "//",
-    "cDC2": "\\\\",
+    "cDC1": "///",
+    "cDC2": "++",
     "mregDC": "*",
     
-    "Neutrophil": "//",
-    "Mast cell": "+",
+    "Neutrophil": "O",
+    "Mast cell": "++",
     
-    "FRC": "O",
-    "FDC": "+",
+    "FRC-like": "O",
+    "FDC-like": "++",
 }
 
 ALL_SUBTYPE_LIST = [
-    "AT2", "AT1", "KRT5-/KRT17+", "Basal", "RAS", "Goblet", "Ciliated",
+    "AT2", "AT1", "KRT5-/KRT17+", "Basal", "Secretory", "Goblet", "Ciliated",
     "Myofibroblast", "COMP+ fibroblast", "GREM1+ fibroblast", "Adventitial fibroblast", "Lipofibroblast",
     "Smooth muscle cell", "Pericyte", "Alveolar Pericyte",
     "Lymphatic", "Arteriole", "Aerocyte", "General capillary", "Venule",
@@ -100,7 +110,7 @@ ALL_SUBTYPE_LIST = [
     "B cell", "Plasma cell",
     "pDC", "cDC1", "cDC2", "mregDC", 
     "Neutrophil", "Mast cell",
-    "FRC", "FDC"
+    "FRC-like", "FDC-like"
 ]
 
 CMAP_COLORLIST=["#1D224C", "#692755", "#B33632", "#FF6622", "#FFFFBB"]
@@ -147,4 +157,4 @@ TITLE_ABBREVIATION = {
     "Alveolar macrophage": "Alveolar MΦ",
 }
 
-EPITHELIAL_SUBTYPE = ["AT2", "AT1", "KRT5-/KRT17+", "Basal", "RAS", "Goblet", "Ciliated"]
+EPITHELIAL_SUBTYPE = ["AT2", "AT1", "KRT5-/KRT17+", "Basal", "Secretory", "Goblet", "Ciliated"]
